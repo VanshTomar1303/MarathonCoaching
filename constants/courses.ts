@@ -1,0 +1,247 @@
+import type { Course } from "@/types";
+
+export const courses: Course[] = [
+  {
+    slug: "foundation",
+    name: "IIT JEE Foundation Course",
+    shortName: "Foundation",
+    tagline: "Build the base early — Class IX & X",
+    grades: "Class IX - X",
+    exam: "Foundation",
+    modes: ["online", "offline", "hybrid"],
+    duration: "12 months",
+    batchSize: "20-25 students",
+    description:
+      "A structured two-year head start for Class IX and X students that builds concept clarity in Physics, Chemistry and Mathematics well before the JEE/NEET syllabus begins — so the transition into Class XI feels like a continuation, not a cold start.",
+    highlights: [
+      "12 months of structured video lectures",
+      "5,000+ practice questions across Physics, Chemistry, Maths",
+      "10 full-length mock tests",
+      "Unlimited doubt-clearing sessions",
+    ],
+    curriculum: [
+      { title: "Physics Fundamentals", topics: ["Measurement & Motion", "Force & Laws of Motion", "Work & Energy", "Sound & Light"] },
+      { title: "Chemistry Fundamentals", topics: ["Matter & its Nature", "Atomic Structure", "Chemical Reactions", "Periodic Classification"] },
+      { title: "Mathematics Fundamentals", topics: ["Number Systems", "Algebra", "Coordinate Geometry", "Mensuration"] },
+    ],
+    studyMaterial: ["Concept booklets per chapter", "Chapter-end question banks", "Board-aligned practice sheets"],
+    mockTests: "10 full-length mock tests with subject-wise performance reports",
+    parentDashboard: "Monthly progress reports shared directly with parents, plus open counselling sessions.",
+    faqs: [
+      { question: "Is this course aligned with school boards?", answer: "Yes — the curriculum is mapped to CBSE/ICSE/WB Board syllabi while layering in JEE-style problem solving from Class IX itself." },
+      { question: "Can a student join mid-year?", answer: "Yes, foundation batches admit students through the year with a short bridge module to catch up." },
+    ],
+    image: "/courses/JEE-Foundation-Course.jpg",
+  },
+  {
+    slug: "jee-main",
+    name: "JEE Main Preparation Course",
+    shortName: "JEE Main",
+    tagline: "Master the syllabus that gets you through the first gate",
+    grades: "Class XI - XII / Droppers",
+    exam: "JEE",
+    modes: ["online", "offline", "hybrid"],
+    duration: "1-2 years",
+    batchSize: "20-25 students",
+    description:
+      "Comprehensive coverage of the full JEE Main syllabus across Physics, Chemistry and Mathematics, with a strong emphasis on speed and accuracy for the objective-style paper.",
+    highlights: [
+      "Complete Class XI & XII syllabus coverage",
+      "Marathon Academy Smart Test (MAST) with live all-batch ranking",
+      "Question bank of 10,000+ questions",
+      "Weekly tests with instant performance analytics",
+    ],
+    curriculum: [
+      { title: "Physics", topics: ["Mechanics", "Electricity & Magnetism", "Waves & Optics", "Modern Physics"] },
+      { title: "Chemistry", topics: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry"] },
+      { title: "Mathematics", topics: ["Algebra", "Calculus", "Coordinate Geometry", "Trigonometry"] },
+    ],
+    studyMaterial: ["Hard copy + digital study material", "Chapter-wise previous year questions", "Formula handbooks"],
+    mockTests: "Weekly MAST tests plus full-syllabus mock exams in the final quarter",
+    parentDashboard: "Rank and percentile tracking shared with parents after every MAST test.",
+    faqs: [
+      { question: "How is JEE Main different from the Advanced course here?", answer: "This track focuses on speed across a wider, more objective syllabus, whereas the Advanced track adds depth and multi-concept problem solving." },
+      { question: "Are online and offline students tested together?", answer: "Yes — all MAST tests run on a common schedule so every student is ranked against the full batch regardless of mode." },
+    ],
+    image: "/courses/JEE-Foundation-Course2.jpg",
+  },
+  {
+    slug: "jee-advanced",
+    name: "JEE Advanced Preparation Course",
+    shortName: "JEE Advanced",
+    tagline: "The final push toward an IIT seat",
+    grades: "Class XII / Droppers",
+    exam: "JEE",
+    modes: ["online", "offline", "hybrid"],
+    duration: "1-2 years",
+    batchSize: "20-25 students",
+    description:
+      "Deep, multi-concept problem solving for students who've cleared JEE Main and are aiming for a seat in the IITs — built around the analytical, multi-step questions the Advanced paper is known for.",
+    highlights: [
+      "Advanced-level problem sets across all three subjects",
+      "Small batches for close, individual attention",
+      "Regular full-length mock exams under exam-day conditions",
+      "One-on-one mentoring from Shatrudha Prasad and faculty team",
+    ],
+    curriculum: [
+      { title: "Physics", topics: ["Rotational Mechanics", "Electromagnetism", "Thermodynamics", "Modern Physics"] },
+      { title: "Chemistry", topics: ["Physical Chemistry (advanced)", "Reaction Mechanisms", "Coordination Chemistry"] },
+      { title: "Mathematics", topics: ["Calculus (advanced)", "Vectors & 3D Geometry", "Probability", "Complex Numbers"] },
+    ],
+    studyMaterial: ["Advanced problem booklets", "Previous 15 years' JEE Advanced papers with solutions"],
+    mockTests: "Full-length JEE Advanced pattern mock exams every fortnight in the final two months",
+    parentDashboard: "Detailed rank-trend reports and one-on-one counselling ahead of the exam.",
+    faqs: [
+      { question: "What's Marathon Academy's track record here?", answer: "Alumni from this track have gone on to IIT Bombay, IIT Delhi, IIT Kanpur, IIT Kharagpur, IIT Roorkee and IIT (BHU) Varanasi — see the full Results page for rank-wise detail." },
+    ],
+    image: "/courses/JEE-Foundation-Course3.jpg",
+  },
+  {
+    slug: "wbjee",
+    name: "WBJEE Preparation Course",
+    shortName: "WBJEE",
+    tagline: "Purpose-built for West Bengal's own engineering entrance",
+    grades: "Class XI - XII / Droppers",
+    exam: "WBJEE",
+    modes: ["online", "offline", "hybrid"],
+    duration: "1-2 years",
+    batchSize: "20-25 students",
+    description:
+      "A dedicated track aligned to the WBJEE pattern and syllabus, for students targeting government and private engineering colleges within West Bengal.",
+    highlights: [
+      "WBJEE-pattern weekly tests",
+      "Focus on the state syllabus alongside JEE-common topics",
+      "Rank-prediction based on internal test performance",
+    ],
+    curriculum: [
+      { title: "Physics", topics: ["Mechanics", "Heat & Thermodynamics", "Optics", "Electricity"] },
+      { title: "Chemistry", topics: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry"] },
+      { title: "Mathematics", topics: ["Algebra", "Calculus", "Geometry", "Statistics"] },
+    ],
+    studyMaterial: ["WBJEE-specific question banks", "Previous years' WBJEE papers with solutions"],
+    mockTests: "WBJEE-pattern mock tests through the final two terms",
+    parentDashboard: "State-rank tracking shared with parents after every internal test.",
+    faqs: [
+      { question: "Can a JEE Main aspirant also prepare for WBJEE here?", answer: "Yes — most of the syllabus overlaps, and batches are structured so students can prepare for both exams together." },
+    ],
+    image: "/courses/JEE-Foundation-Course.jpg",
+  },
+  {
+    slug: "neet",
+    name: "NEET Preparation Course",
+    shortName: "NEET",
+    tagline: "For students aiming at a seat in medicine",
+    grades: "Class XI - XII / Droppers",
+    exam: "NEET",
+    modes: ["online", "offline", "hybrid"],
+    duration: "1-2 years",
+    batchSize: "20-25 students",
+    description:
+      "Complete Physics, Chemistry and Biology coverage for NEET aspirants, with the depth in Biology that the medical entrance exam demands.",
+    highlights: [
+      "Dedicated Biology faculty alongside Physics & Chemistry",
+      "NCERT-anchored concept building with NEET-pattern practice",
+      "Regular full-syllabus mock tests",
+    ],
+    curriculum: [
+      { title: "Biology", topics: ["Diversity in Living World", "Human Physiology", "Genetics & Evolution", "Ecology"] },
+      { title: "Physics", topics: ["Mechanics", "Electrodynamics", "Optics & Modern Physics"] },
+      { title: "Chemistry", topics: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry"] },
+    ],
+    studyMaterial: ["NCERT-aligned notes", "NEET previous years' papers with solutions"],
+    mockTests: "Full-syllabus NEET-pattern mock tests every month in the final year",
+    parentDashboard: "Subject-wise strength/weakness reports shared each term.",
+    faqs: [
+      { question: "Has Marathon Academy placed students in medical colleges?", answer: "Yes — alumni have gone on to institutions including RG Kar Medical College; see the Alumni page for placement stories." },
+    ],
+    image: "/courses/JEE-Foundation-Course2.jpg",
+  },
+  {
+    slug: "crash-course",
+    name: "JEE/NEET Crash Course",
+    shortName: "Crash Course",
+    tagline: "Focused, high-intensity revision for the final stretch",
+    grades: "Class XII / Droppers",
+    exam: "JEE",
+    modes: ["online", "offline"],
+    duration: "2-3 months",
+    batchSize: "20-25 students",
+    description:
+      "A condensed, high-intensity program for students in the last few months before their exam, focused entirely on high-yield topics, rapid revision and timed practice.",
+    highlights: [
+      "High-weightage topic prioritization",
+      "Daily timed practice sets",
+      "Rapid-fire doubt-clearing sessions",
+    ],
+    curriculum: [
+      { title: "Rapid Revision", topics: ["High-weightage Physics topics", "High-weightage Chemistry topics", "High-weightage Maths topics"] },
+    ],
+    studyMaterial: ["Condensed revision notes", "High-yield formula sheets"],
+    mockTests: "Daily timed test series through the crash course window",
+    parentDashboard: "Weekly progress snapshots during the crash period.",
+    faqs: [
+      { question: "Who should join a crash course?", answer: "Students who've completed their syllabus elsewhere and need a focused, high-intensity revision sprint before exam day." },
+    ],
+    image: "/courses/JEE-Foundation-Course3.jpg",
+  },
+  {
+    slug: "revision",
+    name: "Revision Program",
+    shortName: "Revision",
+    tagline: "Consolidate everything you've learned before exam day",
+    grades: "Class XII / Droppers",
+    exam: "JEE",
+    modes: ["online", "offline", "hybrid"],
+    duration: "6-8 weeks",
+    batchSize: "20-25 students",
+    description:
+      "A structured revision cycle covering the entire syllabus once more, chapter by chapter, backed by timed tests to sharpen recall and speed.",
+    highlights: [
+      "Full-syllabus chapter-wise revision",
+      "Formula and concept quick-reference sheets",
+      "Timed chapter tests",
+    ],
+    curriculum: [
+      { title: "Full Syllabus Revision", topics: ["Physics recap", "Chemistry recap", "Mathematics recap"] },
+    ],
+    studyMaterial: ["Quick-reference formula sheets", "Chapter-wise revision question sets"],
+    mockTests: "Chapter tests weekly, cumulative tests bi-weekly",
+    parentDashboard: "Chapter-completion tracker shared with parents.",
+    faqs: [
+      { question: "Can I join just the revision program without the full-year course?", answer: "Yes, the revision program is open as a standalone module for students who've studied elsewhere." },
+    ],
+    image: "/courses/JEE-Foundation-Course.jpg",
+  },
+  {
+    slug: "test-series",
+    name: "Online Test Series",
+    shortName: "Test Series",
+    tagline: "Know exactly where you stand before the real exam",
+    grades: "Class XI - XII / Droppers",
+    exam: "JEE",
+    modes: ["online"],
+    duration: "Flexible / add-on",
+    batchSize: "Unlimited",
+    description:
+      "A standalone online test series for JEE, NEET and WBJEE aspirants, with instant scoring, all-India style ranking, and detailed subject-wise performance analytics.",
+    highlights: [
+      "Marathon Academy Smart Test (MAST) with live ranking",
+      "Instant, detailed performance analytics",
+      "Question bank of 10,000+ questions",
+    ],
+    curriculum: [
+      { title: "Full Syllabus Tests", topics: ["JEE Main pattern tests", "JEE Advanced pattern tests", "NEET pattern tests", "WBJEE pattern tests"] },
+    ],
+    studyMaterial: ["Solution walkthroughs after every test"],
+    mockTests: "Weekly tests, available entirely online",
+    parentDashboard: "Rank and percentile trend charts after every test.",
+    faqs: [
+      { question: "Do I need to be enrolled in a full course to join the test series?", answer: "No — the test series is available as a standalone subscription for self-study students as well." },
+    ],
+    image: "/app-ui/iit-jee-online-text.png",
+  },
+];
+
+export function getCourseBySlug(slug: string) {
+  return courses.find((c) => c.slug === slug);
+}

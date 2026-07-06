@@ -1,0 +1,112 @@
+{
+  "contact": {
+    "phone": "+91 8961655910",
+    "email": "info@marathonacademy.co.in",
+    "address": "AD-89, First Floor, (Marathon Academy) Sector - 1, Salt Lake, Kolkata - 700064",
+    "social": ["Facebook", "Twitter", "YouTube"]
+  },
+  "founder": {
+    "name": "Shatrudha Prasad",
+    "role": "Main Mentor / Maths Faculty",
+    "credentials": "IIT Madras graduate; started teaching while still a student himself",
+    "notes": "Holds regular counselling sessions for parents; known as teacher, guide and motivator to alumni across IITs/NITs/BITS/ISI/CMI"
+  },
+  "mission": "Committed to providing quality education in a highly competitive, congenial and healthy environment along with the best infrastructure.",
+  "courses": [
+    {
+      "name": "IIT JEE Foundation Course",
+      "grades": "Class 9-10",
+      "highlights": ["12 months online video lecture access", "5000+ practice questions", "10 full-length mock tests", "Unlimited doubt-clearing sessions"]
+    },
+    {
+      "name": "One Year Course for JEE Main and JEE Advanced",
+      "grades": "Class 12 / droppers"
+    },
+    {
+      "name": "Two Year Course for JEE Main & Advanced",
+      "grades": "Class 11-12"
+    }
+  ],
+  "program_features": [
+    "Online Live Classes",
+    "Recordings of Classes",
+    "Hard Copy Study Material",
+    "Online Test Series",
+    "Doubt Removal",
+    "Personal Attention and Focus",
+    "Small batch sizes of 20-25 students",
+    "Marathon Academy Smart Test (MAST) with live ranking",
+    "Question bank of 10,000+ questions covering full syllabus"
+  ],
+  "results_by_year": {
+    "2021": [
+      {"name": "Hricheek Mondal", "air": 464},
+      {"name": "Soumyadip Das", "air": 475},
+      {"name": "Ayush Ramteke", "air": 957},
+      {"name": "Aaronyak Dewanji", "air": 1317},
+      {"name": "Avik Halder", "air": 1647},
+      {"name": "Shubhayan Pan", "air": 2837},
+      {"name": "Debaditya Das", "air": 2896},
+      {"name": "Aritra Kundu", "air": 3818}
+    ],
+    "2020": [
+      {"name": "Danish Javed", "air": 69},
+      {"name": "Tarang Sur Choudhury", "air": 778},
+      {"name": "Mousam Biswas", "air": 1128},
+      {"name": "Biswayan Sarkar", "air": 1277},
+      {"name": "Soham Chakraborty", "air": 1551},
+      {"name": "Paritosh Sarangi", "air": 2166},
+      {"name": "Ushasi Das", "air": 2174},
+      {"name": "Amitava Roy", "air": 2481}
+    ],
+    "2019": [
+      {"name": "Arka Das", "air": 124},
+      {"name": "Sankhojyoti Halder", "air": 232},
+      {"name": "Richeek Das", "air": 544},
+      {"name": "Aritra Chatterjee", "air": 555},
+      {"name": "Anubhab Goswami", "air": 1271},
+      {"name": "Pobitra Karmakar", "air": 1631},
+      {"name": "Pramit Kr. Chandra", "air": 2018},
+      {"name": "Abhinav Dutta", "air": 2312}
+    ],
+    "2018": [
+      {"name": "Avinandan Bose", "air": 104},
+      {"name": "Saswata Banerjee", "air": 535},
+      {"name": "Sagnik Roy", "air": 567}
+    ]
+  },
+  "alumni_placements": [
+    {"name": "Navneet Agarwal", "institute": "IIT Bombay", "branch": "Computer Science"},
+    {"name": "Pramit Das", "institute": "Indian Statistical Institute, Kolkata", "branch": "B.Stat"},
+    {"name": "Advay Pal", "institute": "National University of Singapore", "note": "AIR 2808, JEE Advanced 2015"},
+    {"name": "Sanjay Ghosh", "institute": "BITS Pilani", "branch": "Computer Science"},
+    {"name": "Aman Ranjan", "institute": "ISM Dhanbad", "branch": "Computer Science & Engg."},
+    {"name": "Tathagata Biswas", "institute": "IIT Bombay"},
+    {"name": "Avirup Kundu", "institute": "IIT (BHU) Varanasi"},
+    {"name": "Binita Banerjee", "institute": "RG Kar Medical College"},
+    {"name": "Sayak Chakrabarti", "institute": "IIT Kanpur", "note": "122/122 in Maths, JEE Advanced 2017"},
+    {"name": "Nilabjo Dey", "institute": "IIT Delhi"},
+    {"name": "Arnab Jana", "institute": "IIT Bombay"},
+    {"name": "Rupayan Sarkar", "institute": "IIT Kharagpur"},
+    {"name": "Dewang Kr Agarwal", "institute": "ISC 2019", "note": "All India Topper"},
+    {"name": "Dibyajyoti Dey", "institute": "IIT (BHU) Varanasi"},
+    {"name": "Rishabh Gupta", "institute": "IIT Kharagpur"},
+    {"name": "Sagnik Roy", "institute": "IIT Kharagpur"},
+    {"name": "Saikat Mandol", "institute": "IIT Kharagpur"},
+    {"name": "Sandeep Prasad Shaw", "institute": "IIST", "branch": "Aerospace Engg."},
+    {"name": "Spandan Poddar", "institute": "Chennai Mathematical Institute"},
+    {"name": "Jyotsnaa Gupta", "institute": "IIT Roorkee"}
+  ],
+  "note_on_testimonials": "Original site has ~15 long-form first-person testimonials naming Shatrudha Prasad as maths faculty. Full paragraphs not reproduced here (copyright) — only name/institute extracted above. New site should commission fresh short-form quotes/pull-quotes rather than copy old paragraphs verbatim.",
+  "image_inventory": {
+    "logos": ["cropped-marathon-logo1.jpg", "cropped-M-icon.png", "marathon-academy.png"],
+    "rank_holder_photos": "31 individual student photos named like `<name>-air-<rank>.jpg`, one per results entry above",
+    "campus_and_classroom_gallery": "IIT-JEE-course-India-1..30.jpg (30 images)",
+    "success_party_gallery": "IIT-JEE-Exam-success-party-1..30.jpg (30 images)",
+    "course_thumbnails": ["JEE-Foundation-Course.jpg", "JEE-Foundation-Course2.jpg", "JEE-Foundation-Course3.jpg"],
+    "app_ui_mockups": ["iit-jee-course-mobile-app.png", "iit-jee-online-text.png", "iit-jee-study-material.png"],
+    "faculty": ["Shatrudha-Prasad.png"],
+    "blog_graphics": ["Top-10-Engineering-Entrance-Exams-in-India-2022-2.png", "Ryan-Biswas.png", "Samahriti-Mukherjee-ISI.png", "Sukrit-Chattopadhyay.png"],
+    "misc_illustrations": ["rsw_370cg_truem*.webp/jpg (36 files, decorative/illustration set)", "marathonacademy-girl001.png", "marathonacademy-girl02.png"]
+  }
+}
