@@ -33,7 +33,7 @@ export default async function BlogPostPage({
     <article className="relative pt-40 pb-28">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
         <RevealOnScroll>
-          <Link href="/blog" className="inline-flex items-center gap-1.5 text-sm text-foreground/50 hover:text-navy mb-8">
+          <Link href="/blog" className="inline-flex items-center gap-1.5 text-sm text-foreground/50 hover:text-foreground mb-8">
             <ArrowLeft className="h-4 w-4" /> Back to Blog
           </Link>
           <p className="text-xs font-medium text-gold uppercase tracking-wider mb-3">{post.category}</p>

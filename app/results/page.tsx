@@ -15,7 +15,7 @@ export default function ResultsPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Results</p>
@@ -24,11 +24,11 @@ export default function ResultsPage() {
             </h1>
             <div className="mt-10 flex justify-center gap-14">
               <div>
-                <AnimatedCounter value={totalSelections} suffix="+" className="font-display font-semibold text-4xl text-navy" />
+                <AnimatedCounter value={totalSelections} suffix="+" className="font-display font-semibold text-4xl text-foreground" />
                 <p className="text-sm text-foreground/55 mt-1">JEE Advanced selections shown</p>
               </div>
               <div>
-                <AnimatedCounter value={bestAIR} className="font-display font-semibold text-4xl text-navy" />
+                <AnimatedCounter value={bestAIR} className="font-display font-semibold text-4xl text-foreground" />
                 <p className="text-sm text-foreground/55 mt-1">Best All India Rank</p>
               </div>
             </div>

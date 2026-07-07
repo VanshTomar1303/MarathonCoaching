@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { navLinks, site } from "@/constants/site";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -53,7 +54,7 @@ export function Navbar() {
                 height={36}
                 className="rounded-lg"
               />
-              <span className="font-display font-semibold text-lg tracking-tight text-navy hidden sm:block">
+              <span className="font-display font-semibold text-lg tracking-tight text-foreground hidden sm:block">
                 Marathon Academy
               </span>
             </Link>
@@ -69,8 +70,8 @@ export function Navbar() {
                   <Link
                     href={link.href}
                     className={cn(
-                      "flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium text-foreground/70 hover:text-navy hover:bg-navy/5 transition-colors",
-                      pathname === link.href && "text-navy bg-navy/5"
+                      "flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-foreground/5 transition-colors",
+                      pathname === link.href && "text-foreground bg-foreground/5"
                     )}
                   >
                     {link.label}
@@ -88,9 +89,9 @@ export function Navbar() {
                         <div className="glass rounded-2xl p-2 shadow-[0_20px_50px_-15px_rgba(11,31,77,0.3)]">
                           {link.children.map((child) => (
                             <Link
-                              key={child.href}
+                              key={child.label}
                               href={child.href}
-                              className="block rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/70 hover:bg-navy/5 hover:text-navy transition-colors"
+                              className="block rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/70 hover:bg-foreground/5 hover:text-foreground transition-colors"
                             >
                               {child.label}
                             </Link>
@@ -103,26 +104,30 @@ export function Navbar() {
               ))}
             </nav>
 
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-3 shrink-0">
               <a
                 href={site.phoneHref}
-                className="flex items-center gap-1.5 text-sm font-medium text-foreground/70 hover:text-navy"
+                className="hidden xl:flex items-center gap-1.5 whitespace-nowrap shrink-0 text-sm font-medium text-foreground/70 hover:text-foreground"
               >
-                <Phone className="h-3.5 w-3.5" />
+                <Phone className="h-3.5 w-3.5 shrink-0" />
                 {site.phone}
               </a>
+              <ThemeToggle />
               <Button variant="gold" size="sm" asChild>
                 <Link href="/booking">Enroll Now</Link>
               </Button>
             </div>
 
-            <button
-              className="lg:hidden p-2 text-navy"
-              onClick={() => setMobileOpen((v) => !v)}
-              aria-label="Toggle menu"
-            >
-              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            <div className="flex items-center gap-1 lg:hidden">
+              <ThemeToggle />
+              <button
+                className="p-2 text-foreground"
+                onClick={() => setMobileOpen((v) => !v)}
+                aria-label="Toggle menu"
+              >
+                {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -150,7 +155,7 @@ export function Navbar() {
                     <div className="flex items-center justify-between">
                       <Link
                         href={link.href}
-                        className="flex-1 rounded-xl px-3 py-3 text-base font-medium text-foreground/80 hover:bg-navy/5"
+                        className="flex-1 rounded-xl px-3 py-3 text-base font-medium text-foreground/80 hover:bg-foreground/5"
                       >
                         {link.label}
                       </Link>
@@ -180,9 +185,9 @@ export function Navbar() {
                         >
                           {link.children.map((child) => (
                             <Link
-                              key={child.href}
+                              key={child.label}
                               href={child.href}
-                              className="block rounded-xl px-3 py-2.5 text-sm text-foreground/60 hover:bg-navy/5"
+                              className="block rounded-xl px-3 py-2.5 text-sm text-foreground/60 hover:bg-foreground/5"
                             >
                               {child.label}
                             </Link>

@@ -18,7 +18,7 @@ export function CTASection() {
             </h2>
             <p className="mt-5 text-white/60 max-w-lg mx-auto">
               Join Marathon Academy and prepare with the structure, mentorship, and results that
-              have defined us since 2011.
+              have defined our IIT-JEE coaching.
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
               <Button variant="gold" size="lg" asChild>

@@ -9,14 +9,14 @@ import { site } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Faculty",
-  description: `Meet the faculty behind ${site.name}'s IIT-JEE, NEET, and WBJEE results.`,
+  description: `Meet the faculty and main mentor behind ${site.name}'s IIT-JEE results.`,
 };
 
 export default function FacultyPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Faculty</p>

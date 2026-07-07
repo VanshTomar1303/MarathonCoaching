@@ -55,7 +55,12 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
-          <p>Est. {site.founded} — Run Beyond Limits. Achieve Excellence.</p>
+          <div className="flex items-center gap-4">
+            <a href={site.androidApp} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+              Get the Android App
+            </a>
+            <span>{site.tagline}</span>
+          </div>
         </div>
       </div>
     </footer>

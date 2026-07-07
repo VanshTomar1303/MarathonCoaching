@@ -24,11 +24,11 @@ export function ResultsPreview() {
           </div>
           <div className="flex gap-10">
             <div>
-              <AnimatedCounter value={totalSelections} suffix="+" className="font-display font-semibold text-3xl text-navy" />
+              <AnimatedCounter value={totalSelections} suffix="+" className="font-display font-semibold text-3xl text-foreground" />
               <p className="text-sm text-foreground/55 mt-1">Selections since 2018</p>
             </div>
             <div>
-              <AnimatedCounter value={bestAIR} className="font-display font-semibold text-3xl text-navy" />
+              <AnimatedCounter value={bestAIR} className="font-display font-semibold text-3xl text-foreground" />
               <p className="text-sm text-foreground/55 mt-1">Best AIR achieved</p>
             </div>
           </div>

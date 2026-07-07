@@ -26,7 +26,7 @@ export function AnimatedCounter({
   useEffect(() => {
     return spring.on("change", (latest) => {
       if (ref.current) {
-        ref.current.textContent = `${prefix}${Math.floor(latest).toLocaleString("en-IN")}${suffix}`;
+        ref.current.textContent = `${prefix}${Math.round(latest).toLocaleString("en-IN")}${suffix}`;
       }
     });
   }, [spring, prefix, suffix]);

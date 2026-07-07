@@ -42,7 +42,7 @@ export function FAQClient() {
             onClick={() => setCategory(c)}
             className={cn(
               "rounded-full px-4 py-1.5 text-xs font-medium transition-colors",
-              category === c ? "bg-navy text-white" : "bg-surface-muted text-foreground/60 hover:text-navy"
+              category === c ? "bg-navy text-white" : "bg-surface-muted text-foreground/60 hover:text-foreground"
             )}
           >
             {c}

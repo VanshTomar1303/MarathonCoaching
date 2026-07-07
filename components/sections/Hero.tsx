@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PlayCircle, ArrowRight } from "lucide-react";
 import { AuroraBackground } from "@/components/animations/AuroraBackground";
 import { BlueprintGrid } from "@/components/animations/BlueprintGrid";
-import { FloatingFormulaFieldLazy } from "@/components/animations/FloatingFormulaFieldLazy";
+import { FloatingFormulaField } from "@/components/animations/FloatingFormulaField";
 import { AnimatedCounter } from "@/components/animations/AnimatedCounter";
 import { Button } from "@/components/ui/button";
 import { stats } from "@/constants/site";
@@ -11,28 +11,27 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-28 pb-16">
       <AuroraBackground />
-      <BlueprintGrid className="text-navy" />
-      <div className="absolute inset-0 hidden md:block">
-        <FloatingFormulaFieldLazy />
-      </div>
+      <BlueprintGrid className="text-foreground" />
+      <FloatingFormulaField />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-navy mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-foreground mb-6">
             <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-            Est. 2011 — Kolkata&apos;s Trusted IIT-JEE / NEET Institute
+            Kolkata&apos;s Trusted IIT-JEE Coaching Institute
           </div>
 
           <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-balance">
-            Crack India&apos;s Toughest Exams{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-navy to-gold">
-              with Confidence
+            Hear the{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-gold">
+              Success Mantra
             </span>
           </h1>
 
           <p className="mt-6 text-lg text-foreground/65 max-w-xl leading-relaxed">
-            Empowering future engineers and doctors through world-class coaching, expert
-            mentorship, and personalized learning since 2011.
+            Online live IIT-JEE classes with expert faculty — recorded lessons, hard-copy study
+            material, an online test series and real-time doubt clearing, in focused batches of
+            20–25 students.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -63,7 +62,7 @@ export function Hero() {
                   <AnimatedCounter
                     value={s.value}
                     suffix={s.suffix}
-                    className="font-display font-semibold text-3xl text-navy"
+                    className="font-display font-semibold text-3xl text-foreground"
                   />
                   <p className="text-sm text-foreground/55 mt-1">{s.label}</p>
                 </div>

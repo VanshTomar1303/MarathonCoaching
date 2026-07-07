@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Drive Tailwind's `dark:` variant off our data-theme attribute (set by next-themes) */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
   --color-navy: #0b1f4d;
   --color-navy-light: #16316f;
@@ -125,12 +128,6 @@ h1, h2, h3, h4, h5, h6 {
   to { height: 0; }
 }
 
-@media (pointer: fine) {
-  body, a, button {
-    cursor: none;
-  }
-}
-
 /* CSS-only entrance animation for above-the-fold content. Runs on paint via
    the browser's CSS engine, independent of React hydration/JS bundle load
    time — critical text must never wait on client JS to become visible. */
@@ -140,4 +137,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .animate-fade-in-up {
   animation: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Gentle drift for the CSS floating-formula field (replaces the WebGL version) */
+@keyframes formula-drift {
+  0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-22px) rotate(var(--rot, 0deg)); }
 }

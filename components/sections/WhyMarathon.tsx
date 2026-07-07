@@ -8,7 +8,7 @@ import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { Card } from "@/components/ui/card";
 
 const features = [
-  { icon: GraduationCap, title: "Experienced Faculty", desc: "Mentors with a proven track record of IIT/NEET selections since 2011." },
+  { icon: GraduationCap, title: "Experienced Faculty", desc: "An esteemed faculty with proven track records in IIT coaching." },
   { icon: Users, title: "Small Batch Size", desc: "Capped at 20-25 students so every learner gets individual attention." },
   { icon: Eye, title: "Personal Attention", desc: "Faculty who know each student's strengths, weaknesses, and pace." },
   { icon: Video, title: "Recorded Lectures", desc: "Revisit any class, any time, at your own pace." },
@@ -37,8 +37,8 @@ export function WhyMarathon() {
           {features.map((f, i) => (
             <RevealOnScroll key={f.title} delay={(i % 3) * 0.08}>
               <Card className="p-6 h-full hover:-translate-y-1 hover:shadow-[0_20px_50px_-15px_rgba(11,31,77,0.25)] transition-all duration-300">
-                <div className="h-11 w-11 rounded-xl bg-navy/5 flex items-center justify-center mb-4">
-                  <f.icon className="h-5 w-5 text-navy" />
+                <div className="h-11 w-11 rounded-xl bg-foreground/5 flex items-center justify-center mb-4">
+                  <f.icon className="h-5 w-5 text-foreground" />
                 </div>
                 <h3 className="font-heading font-medium text-base mb-1.5">{f.title}</h3>
                 <p className="text-sm text-foreground/60 leading-relaxed">{f.desc}</p>

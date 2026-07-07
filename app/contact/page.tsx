@@ -19,7 +19,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Contact Us</p>
@@ -38,13 +38,13 @@ export default function ContactPage() {
 
           <RevealOnScroll delay={0.1} className="lg:col-span-2 space-y-5">
             <Card className="p-6 space-y-4">
-              <a href={site.phoneHref} className="flex items-center gap-3 text-sm hover:text-navy">
+              <a href={site.phoneHref} className="flex items-center gap-3 text-sm hover:text-foreground">
                 <Phone className="h-5 w-5 text-gold shrink-0" /> {site.phone}
               </a>
-              <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm hover:text-navy">
+              <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm hover:text-foreground">
                 <MessageCircle className="h-5 w-5 text-gold shrink-0" /> WhatsApp Us
               </a>
-              <a href={`mailto:${site.email}`} className="flex items-center gap-3 text-sm hover:text-navy">
+              <a href={`mailto:${site.email}`} className="flex items-center gap-3 text-sm hover:text-foreground">
                 <Mail className="h-5 w-5 text-gold shrink-0" /> {site.email}
               </a>
               <div className="flex items-start gap-3 text-sm">

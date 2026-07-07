@@ -18,7 +18,7 @@ export default function ResourcesPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Download Centre</p>
@@ -42,8 +42,8 @@ export default function ResourcesPage() {
                   .map((r, i) => (
                     <RevealOnScroll key={r.title} delay={(i % 2) * 0.06}>
                       <Card className="p-5 flex items-center gap-4">
-                        <div className="h-11 w-11 rounded-xl bg-navy/5 flex items-center justify-center shrink-0">
-                          <FileText className="h-5 w-5 text-navy" />
+                        <div className="h-11 w-11 rounded-xl bg-foreground/5 flex items-center justify-center shrink-0">
+                          <FileText className="h-5 w-5 text-foreground" />
                         </div>
                         <p className="text-sm font-medium flex-1">{r.title}</p>
                         {r.fileHref ? (

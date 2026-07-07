@@ -15,7 +15,7 @@ export default function AlumniPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Alumni</p>
@@ -36,8 +36,8 @@ export default function AlumniPage() {
             {alumniPlacements.map((a, i) => (
               <RevealOnScroll key={a.name} delay={(i % 2) * 0.08}>
                 <Card className="p-6 flex items-start gap-4">
-                  <div className="h-11 w-11 rounded-xl bg-navy/5 flex items-center justify-center shrink-0">
-                    <GraduationCap className="h-5 w-5 text-navy" />
+                  <div className="h-11 w-11 rounded-xl bg-foreground/5 flex items-center justify-center shrink-0">
+                    <GraduationCap className="h-5 w-5 text-foreground" />
                   </div>
                   <div>
                     <p className="font-heading font-medium text-base">{a.name}</p>

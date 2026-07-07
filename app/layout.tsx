@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { clashDisplay, satoshi, inter } from "@/lib/fonts";
 import { SmoothScrollProvider } from "@/components/animations/SmoothScrollProvider";
-import { CustomCursor } from "@/components/animations/CustomCursor";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ThemeProvider } from "@/components/animations/ThemeProvider";
 import { site } from "@/constants/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marathonacademy.co.in"),
   title: {
-    default: `${site.name} — IIT-JEE, NEET & WBJEE Coaching Institute`,
+    default: `${site.name} — IIT-JEE Coaching Institute in Kolkata`,
     template: `%s | ${site.name}`,
   },
   description: site.mission,
   openGraph: {
-    title: `${site.name} — Run Beyond Limits. Achieve Excellence.`,
+    title: `${site.name} — ${site.tagline}`,
     description: site.mission,
     siteName: site.name,
     type: "website",
@@ -39,13 +39,19 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col bg-background text-foreground" suppressHydrationWarning>
-        <SmoothScrollProvider>
-          <CustomCursor />
-          <ScrollProgress />
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </SmoothScrollProvider>
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SmoothScrollProvider>
+            <ScrollProgress />
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </SmoothScrollProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

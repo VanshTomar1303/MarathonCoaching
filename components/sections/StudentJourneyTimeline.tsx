@@ -32,7 +32,7 @@ export function StudentJourneyTimeline() {
         </RevealOnScroll>
 
         <div className="relative">
-          <div className="absolute left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-navy/20 via-gold/40 to-navy/20 md:-translate-x-1/2" />
+          <div className="absolute left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-foreground/20 via-gold/40 to-foreground/20 md:-translate-x-1/2" />
           <div className="space-y-10">
             {steps.map((step, i) => (
               <RevealOnScroll

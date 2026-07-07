@@ -12,7 +12,7 @@ export function LegalLayout({
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <h1 className="font-display font-semibold text-4xl tracking-tight text-balance">{title}</h1>

@@ -40,7 +40,7 @@ export default async function CoursePage({
   return (
     <>
       <section className="relative pt-40 pb-20 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">{course.grades}</p>
@@ -91,7 +91,7 @@ export default async function CoursePage({
                   <h3 className="font-heading font-medium text-lg mb-3">{c.title}</h3>
                   <div className="flex flex-wrap gap-2">
                     {c.topics.map((t) => (
-                      <span key={t} className="text-xs font-medium rounded-full bg-navy/5 text-navy px-3 py-1.5">
+                      <span key={t} className="text-xs font-medium rounded-full bg-foreground/5 text-foreground px-3 py-1.5">
                         {t}
                       </span>
                     ))}

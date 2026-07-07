@@ -16,7 +16,7 @@ export default function CareersPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Careers</p>
@@ -33,8 +33,8 @@ export default function CareersPage() {
             <RevealOnScroll key={job.slug} delay={i * 0.06}>
               <Card className="p-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
                 <div className="flex items-start gap-4">
-                  <div className="h-11 w-11 rounded-xl bg-navy/5 flex items-center justify-center shrink-0">
-                    <Briefcase className="h-5 w-5 text-navy" />
+                  <div className="h-11 w-11 rounded-xl bg-foreground/5 flex items-center justify-center shrink-0">
+                    <Briefcase className="h-5 w-5 text-foreground" />
                   </div>
                   <div>
                     <h3 className="font-heading font-medium text-base">{job.title}</h3>

@@ -9,14 +9,14 @@ import { courses } from "@/constants/courses";
 export const metadata: Metadata = {
   title: "Courses",
   description:
-    "Foundation, JEE Main, JEE Advanced, WBJEE, NEET, Crash Course, Revision and Test Series programs — online, offline, and hybrid.",
+    "IIT JEE Foundation Course (Class 9 & 10), the One Year Course and the Two Year Course for JEE Main and JEE Advanced — online IIT-JEE coaching from Marathon Academy, Kolkata.",
 };
 
 export default function CoursesPage() {
   return (
     <>
       <section className="relative pt-40 pb-20 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Programs</p>
@@ -58,7 +58,7 @@ export default function CoursesPage() {
                   <p className="text-xs font-medium text-gold uppercase tracking-wider mb-2">{course.grades}</p>
                   <h3 className="font-heading font-semibold text-lg mb-1.5">{course.name}</h3>
                   <p className="text-sm text-foreground/60 leading-relaxed mb-4">{course.tagline}</p>
-                  <div className="flex items-center gap-1.5 text-sm font-medium text-navy">
+                  <div className="flex items-center gap-1.5 text-sm font-medium text-foreground">
                     View Details
                     <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>

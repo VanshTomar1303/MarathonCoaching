@@ -10,8 +10,8 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-navy text-white hover:bg-navy-light shadow-[0_8px_30px_-8px_rgba(11,31,77,0.5)]",
         gold: "bg-gold text-navy hover:bg-gold-light shadow-[0_8px_30px_-8px_rgba(246,196,69,0.6)]",
-        outline: "border border-navy/20 text-foreground hover:bg-navy/5",
-        ghost: "hover:bg-navy/5",
+        outline: "border border-foreground/20 text-foreground hover:bg-foreground/5",
+        ghost: "hover:bg-foreground/5",
         white: "bg-white text-navy hover:bg-white/90",
       },
       size: {

@@ -12,8 +12,8 @@ export function BlueprintGrid({ className = "" }: { className?: string }) {
           <path d="M 200 0 L 0 0 0 200" fill="none" stroke="currentColor" strokeWidth="0.8" />
         </pattern>
       </defs>
-      <rect width="100%" height="100%" fill="url(#blueprint-grid)" className="text-navy/10" />
-      <rect width="100%" height="100%" fill="url(#blueprint-grid-major)" className="text-navy/15" />
+      <rect width="100%" height="100%" fill="url(#blueprint-grid)" className="text-foreground/10" />
+      <rect width="100%" height="100%" fill="url(#blueprint-grid-major)" className="text-foreground/15" />
     </svg>
   );
 }

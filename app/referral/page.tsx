@@ -21,7 +21,7 @@ export default function ReferralPage() {
   return (
     <>
       <section className="relative pt-40 pb-16 overflow-hidden">
-        <BlueprintGrid className="text-navy" />
+        <BlueprintGrid className="text-foreground" />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Referral Programme</p>
@@ -37,8 +37,8 @@ export default function ReferralPage() {
           {rewards.map((r, i) => (
             <RevealOnScroll key={r.title} delay={i * 0.08}>
               <Card className="p-7 h-full">
-                <div className="h-11 w-11 rounded-xl bg-navy/5 flex items-center justify-center mb-4">
-                  <r.icon className="h-5 w-5 text-navy" />
+                <div className="h-11 w-11 rounded-xl bg-foreground/5 flex items-center justify-center mb-4">
+                  <r.icon className="h-5 w-5 text-foreground" />
                 </div>
                 <h3 className="font-heading font-medium text-lg mb-2">{r.title}</h3>
                 <p className="text-sm text-foreground/60 leading-relaxed">{r.desc}</p>
@@ -55,7 +55,7 @@ export default function ReferralPage() {
             <p className="text-sm text-foreground/55 text-center mb-6 max-w-md mx-auto">
               Terms: rewards are credited once your referral completes enrolment and their first
               month of fees. See our{" "}
-              <a href="/legal/terms" className="text-navy underline">Terms &amp; Conditions</a> for details.
+              <a href="/legal/terms" className="text-foreground underline">Terms &amp; Conditions</a> for details.
             </p>
             <ReferralForm />
           </RevealOnScroll>

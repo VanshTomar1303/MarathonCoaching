@@ -29,7 +29,7 @@ export function GalleryClient() {
               onClick={() => setActive(f.value)}
               className={cn(
                 "rounded-full px-5 py-2 text-sm font-medium transition-colors",
-                active === f.value ? "bg-navy text-white" : "bg-surface-muted text-foreground/60 hover:text-navy"
+                active === f.value ? "bg-navy text-white" : "bg-surface-muted text-foreground/60 hover:text-foreground"
               )}
             >
               {f.label}

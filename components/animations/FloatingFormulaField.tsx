@@ -1,66 +1,54 @@
-"use client";
+import type { CSSProperties } from "react";
 
-import { useMemo, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Text, Float } from "@react-three/drei";
-import type { Group } from "three";
-
-const SYMBOLS = ["E=mc²", "F=ma", "∫", "π", "√x", "λ", "Δ", "PV=nRT", "H₂O", "e=hν"];
-
-function FormulaParticles() {
-  const groupRef = useRef<Group>(null);
-
-  const items = useMemo(
-    () =>
-      SYMBOLS.map((symbol, i) => ({
-        symbol,
-        position: [
-          (Math.random() - 0.5) * 14,
-          (Math.random() - 0.5) * 8,
-          (Math.random() - 0.5) * 6 - 2,
-        ] as [number, number, number],
-        speed: 0.3 + Math.random() * 0.4,
-        key: i,
-      })),
-    []
-  );
-
-  useFrame((_, delta) => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += delta * 0.03;
-    }
-  });
-
-  return (
-    <group ref={groupRef}>
-      {items.map((item) => (
-        <Float key={item.key} speed={item.speed} rotationIntensity={0.3} floatIntensity={1.2}>
-          <Text
-            position={item.position}
-            fontSize={0.6}
-            color="#f6c445"
-            anchorX="center"
-            anchorY="middle"
-            fillOpacity={0.55}
-          >
-            {item.symbol}
-          </Text>
-        </Float>
-      ))}
-    </group>
-  );
-}
+/**
+ * Floating math-formula backdrop for the hero.
+ *
+ * This is a pure-CSS reimplementation of what used to be a three.js/WebGL
+ * canvas. The WebGL version looked the same but its context could degrade in
+ * some environments and paint a washed-out ("white") frame over the hero. CSS
+ * gives the identical drifting-formula look with zero GPU risk, and it renders
+ * the same in light and dark (gold reads on both).
+ */
+const FORMULAS: {
+  s: string;
+  top: string;
+  left: string;
+  size: string;
+  dur: string;
+  delay: string;
+  rot: string;
+}[] = [
+  { s: "PV=nRT", top: "9%", left: "46%", size: "text-5xl", dur: "11s", delay: "0s", rot: "-4deg" },
+  { s: "H₂O", top: "7%", left: "24%", size: "text-4xl", dur: "9s", delay: "1.2s", rot: "3deg" },
+  { s: "π", top: "13%", left: "70%", size: "text-5xl", dur: "10s", delay: "0.5s", rot: "2deg" },
+  { s: "e=hν", top: "40%", left: "14%", size: "text-4xl", dur: "12s", delay: "2s", rot: "-3deg" },
+  { s: "∫", top: "54%", left: "5%", size: "text-7xl", dur: "13s", delay: "0.8s", rot: "0deg" },
+  { s: "Δ", top: "46%", left: "88%", size: "text-5xl", dur: "10.5s", delay: "1.6s", rot: "4deg" },
+  { s: "λ", top: "60%", left: "60%", size: "text-5xl", dur: "9.5s", delay: "0.3s", rot: "-2deg" },
+  { s: "√x", top: "72%", left: "30%", size: "text-4xl", dur: "11.5s", delay: "2.4s", rot: "3deg" },
+  { s: "E=mc²", top: "82%", left: "44%", size: "text-6xl", dur: "12.5s", delay: "0.6s", rot: "-3deg" },
+  { s: "F=ma", top: "90%", left: "68%", size: "text-5xl", dur: "10s", delay: "1.4s", rot: "2deg" },
+];
 
 export function FloatingFormulaField() {
   return (
-    <Canvas
-      camera={{ position: [0, 0, 8], fov: 50 }}
-      dpr={[1, 1.5]}
-      gl={{ alpha: true, antialias: true }}
-      className="!absolute inset-0"
-    >
-      <ambientLight intensity={1.2} />
-      <FormulaParticles />
-    </Canvas>
+    <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden hidden md:block">
+      {FORMULAS.map((f, i) => (
+        <span
+          key={i}
+          className={`absolute font-display font-semibold text-gold/30 select-none ${f.size}`}
+          style={
+            {
+              top: f.top,
+              left: f.left,
+              "--rot": f.rot,
+              animation: `formula-drift ${f.dur} ease-in-out ${f.delay} infinite`,
+            } as CSSProperties
+          }
+        >
+          {f.s}
+        </span>
+      ))}
+    </div>
   );
 }
