@@ -9,7 +9,7 @@ import { faculty } from "@/constants/faculty";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `The mission and teaching philosophy behind ${site.name} — an IIT-JEE coaching institute in Salt Lake, Kolkata.`,
+  description: `The mission and teaching philosophy behind ${site.name} — an IIT-JEE coaching institute in Salt Lake, Orissa.`,
 };
 
 const values = [

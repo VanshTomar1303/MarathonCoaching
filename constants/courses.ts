@@ -104,6 +104,71 @@ export const courses: Course[] = [
     ],
     image: "/courses/JEE-Foundation-Course3.jpg",
   },
+  {
+    slug: "neet",
+    name: "NEET Coaching (Medical Entrance)",
+    shortName: "NEET",
+    tagline: "For students aiming at a seat in medicine",
+    grades: "Class XI - XII / Droppers",
+    exam: "NEET",
+    modes: ["online", "hybrid"],
+    duration: "1-2 years",
+    batchSize: "20-25 students",
+    description:
+      "A dedicated NEET track covering Physics, Chemistry and Biology in the depth the medical entrance exam demands — NCERT-anchored concept building layered with NEET-pattern practice, regular mock tests and one-on-one mentorship right through to exam day.",
+    highlights: [
+      "Complete Physics, Chemistry and Biology coverage",
+      "NCERT-anchored teaching with NEET-pattern question practice",
+      "Regular full-syllabus mock tests with detailed analysis",
+      "Doubt-clearing sessions and one-on-one mentorship",
+    ],
+    curriculum: [
+      { title: "Biology", topics: ["Diversity in the Living World", "Human Physiology", "Genetics & Evolution", "Ecology"] },
+      { title: "Physics", topics: ["Mechanics", "Electrodynamics", "Optics & Modern Physics"] },
+      { title: "Chemistry", topics: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry"] },
+    ],
+    studyMaterial: ["NCERT-aligned notes", "Chapter-wise question banks", "NEET previous-year papers with solutions"],
+    mockTests: "Full-syllabus NEET-pattern mock tests with subject-wise performance reports.",
+    parentDashboard: "Progress and performance tracked through the online portal, with regular updates shared with parents.",
+    faqs: [
+      { question: "Who is the NEET course for?", answer: "Class 11 and 12 students and droppers preparing for the medical entrance exam (NEET)." },
+      { question: "Is Biology taught by dedicated faculty?", answer: "Yes — Biology is taught alongside Physics and Chemistry by subject specialists." },
+    ],
+    image: "/courses/JEE-Foundation-Course.jpg",
+  },
+  {
+    slug: "government-exams",
+    name: "Government Job Exams — SSC, Banking & Railway",
+    shortName: "Govt. Exams",
+    tagline: "Structured coaching for secure government careers",
+    grades: "Graduates & Class XII pass",
+    exam: "Government",
+    modes: ["online", "hybrid"],
+    duration: "Flexible",
+    batchSize: "Small batches",
+    description:
+      "Focused preparation for major government recruitment exams — SSC, Banking (IBPS/SBI) and Railways — spanning quantitative aptitude, reasoning, English and general awareness, with regular sectional and full-length practice and current-affairs updates.",
+    highlights: [
+      "Coverage of SSC, Banking (IBPS/SBI) and Railway exam patterns",
+      "Quantitative aptitude, reasoning, English and general awareness",
+      "Sectional tests plus full-length mock exams with analysis",
+      "Current-affairs updates and speed-and-accuracy drills",
+    ],
+    curriculum: [
+      { title: "Quantitative Aptitude", topics: ["Arithmetic", "Algebra", "Data Interpretation", "Number Series"] },
+      { title: "Reasoning", topics: ["Verbal Reasoning", "Non-verbal Reasoning", "Puzzles", "Seating Arrangement"] },
+      { title: "English", topics: ["Grammar", "Vocabulary", "Reading Comprehension", "Error Spotting"] },
+      { title: "General Awareness", topics: ["Current Affairs", "General Science", "Static GK", "Banking & Economy Awareness"] },
+    ],
+    studyMaterial: ["Topic-wise practice sets", "Previous-year question papers", "Monthly current-affairs digests"],
+    mockTests: "Sectional and full-length mock tests in the latest exam patterns, with detailed analysis.",
+    parentDashboard: "Attendance and test performance tracked through the online portal.",
+    faqs: [
+      { question: "Which exams does this cover?", answer: "Major government recruitment exams including SSC (CGL/CHSL), Banking (IBPS/SBI PO & Clerk) and Railways (RRB)." },
+      { question: "Who can join?", answer: "Graduates and Class 12 pass candidates preparing for government job exams, subject to each exam's own eligibility rules." },
+    ],
+    image: "/courses/JEE-Foundation-Course2.jpg",
+  },
 ];
 
 export function getCourseBySlug(slug: string) {

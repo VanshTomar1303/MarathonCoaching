@@ -18,7 +18,7 @@ export function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-foreground mb-6">
             <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-            Kolkata&apos;s Trusted IIT-JEE Coaching Institute
+            Orissa&apos;s Trusted IIT-JEE Coaching Institute
           </div>
 
           <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-balance">

@@ -67,14 +67,14 @@ export const testimonials: Testimonial[] = [
 export const parentTestimonials: Testimonial[] = [
   {
     name: "Parent of a JEE Advanced selection, 2021",
-    institute: "Salt Lake, Kolkata",
+    institute: "Salt Lake, Orissa",
     quote:
       "Regular progress updates meant we always knew exactly where our son stood — no surprises, just steady, visible improvement all year.",
     role: "parent",
   },
   {
     name: "Parent of a WBJEE selection, 2020",
-    institute: "Salt Lake, Kolkata",
+    institute: "Salt Lake, Orissa",
     quote:
       "Small batch sizes meant our daughter was never just a name on a register. The faculty knew her strengths and weaknesses by name.",
     role: "parent",

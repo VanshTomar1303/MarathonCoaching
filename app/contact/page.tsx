@@ -10,7 +10,7 @@ import { branches } from "@/constants/locations";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: `Get in touch with ${site.name} — call, WhatsApp, or visit our Salt Lake, Kolkata centre.`,
+  description: `Get in touch with ${site.name} — call, WhatsApp, or visit our Salt Lake, Orissa centre.`,
 };
 
 export default function ContactPage() {

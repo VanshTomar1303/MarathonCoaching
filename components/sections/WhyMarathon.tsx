@@ -2,7 +2,7 @@
 
 import {
   Users, GraduationCap, Video, Radio, ClipboardCheck,
-  BarChart3, Eye, HeartHandshake, Award, BookOpen, Laptop, TrendingUp,
+  BarChart3, Eye, HeartHandshake, Award, BookOpen, Laptop, TrendingUp, Compass,
 } from "lucide-react";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { Card } from "@/components/ui/card";
@@ -20,6 +20,7 @@ const features = [
   { icon: BookOpen, title: "Study Material", desc: "Structured, chapter-wise material built by our own faculty." },
   { icon: Laptop, title: "Digital Learning", desc: "A full online platform for classes, tests, and resources." },
   { icon: TrendingUp, title: "Progress Tracking", desc: "See exactly how a student is trending, chapter over chapter." },
+  { icon: Compass, title: "Career Counselling & Guidance", desc: "One-on-one counselling to choose the right course, exam and career path — plus admission guidance at every step." },
 ];
 
 export function WhyMarathon() {

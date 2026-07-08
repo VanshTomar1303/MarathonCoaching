@@ -1,14 +1,14 @@
 export const site = {
   name: "Marathon Academy",
   tagline: "Hear the Success Mantra",
-  descriptor: "IIT-JEE Coaching Institute in Kolkata",
+  descriptor: "IIT-JEE Coaching Institute in Orissa",
   mission:
     "We at Marathon Academy are committed to provide quality education in a high competitive, congenial and healthy environment along with the best infrastructure.",
   phone: "+91 89616 55910",
   phoneHref: "tel:+918961655910",
   whatsappHref: "https://wa.me/918961655910",
   email: "info@marathonacademy.co.in",
-  address: "AD-89, First Floor, (Marathon Academy) Sector 1, Salt Lake, Kolkata - 700064",
+  address: "AD-89, First Floor, (Marathon Academy) Sector 1, Salt Lake, Orissa - 700064",
   social: {
     facebook: "https://www.facebook.com/p/Marathon-Academy-IIT-JEE-Course-100083274168045/",
     twitter: "https://twitter.com/",
@@ -27,6 +27,8 @@ export const navLinks = [
       { label: "Foundation (Class IX-X)", href: "/courses/foundation" },
       { label: "One Year Course (JEE Main & Advanced)", href: "/courses/one-year" },
       { label: "Two Year Course (JEE Main & Advanced)", href: "/courses/two-year" },
+      { label: "NEET (Medical Entrance)", href: "/courses/neet" },
+      { label: "Government Exams (SSC, Banking, Railway)", href: "/courses/government-exams" },
     ],
   },
   { label: "Results", href: "/results" },
@@ -53,9 +55,9 @@ export const navLinks = [
 export const footerLinks = {
   programs: [
     { label: "IIT JEE Foundation Course", href: "/courses/foundation" },
-    { label: "One Year Course (JEE Main & Advanced)", href: "/courses/one-year" },
-    { label: "Two Year Course (JEE Main & Advanced)", href: "/courses/two-year" },
-    { label: "Online Test Series", href: "/resources" },
+    { label: "One / Two Year JEE Course", href: "/courses/two-year" },
+    { label: "NEET Coaching", href: "/courses/neet" },
+    { label: "Government Exams (SSC, Banking, Railway)", href: "/courses/government-exams" },
   ],
   company: [
     { label: "About Us", href: "/about" },

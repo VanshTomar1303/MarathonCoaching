@@ -11,7 +11,7 @@ export interface Course {
   shortName: string;
   tagline: string;
   grades: string;
-  exam: "JEE" | "NEET" | "WBJEE" | "Foundation";
+  exam: "JEE" | "NEET" | "WBJEE" | "Foundation" | "Government";
   modes: LearningMode[];
   duration: string;
   batchSize: string;

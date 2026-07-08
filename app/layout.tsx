@@ -11,7 +11,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   metadataBase: new URL("https://marathonacademy.co.in"),
   title: {
-    default: `${site.name} — IIT-JEE Coaching Institute in Kolkata`,
+    default: `${site.name} — IIT-JEE Coaching Institute in Orissa`,
     template: `%s | ${site.name}`,
   },
   description: site.mission,

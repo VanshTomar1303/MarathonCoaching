@@ -11,7 +11,7 @@ export const jobOpenings: JobOpening[] = [
     title: "Physics Faculty (Sample Role)",
     department: "Academics",
     type: "Full-time",
-    location: "Salt Lake, Kolkata",
+    location: "Salt Lake, Orissa",
     description:
       "Sample listing — replace with a real opening. Would involve teaching JEE/NEET-level Physics across Foundation, Main and Advanced batches.",
   },
@@ -20,7 +20,7 @@ export const jobOpenings: JobOpening[] = [
     title: "Admissions Counsellor (Sample Role)",
     department: "Administration",
     type: "Full-time",
-    location: "Salt Lake, Kolkata",
+    location: "Salt Lake, Orissa",
     description:
       "Sample listing — replace with a real opening. Would involve guiding prospective students and parents through course selection and enrolment.",
   },
