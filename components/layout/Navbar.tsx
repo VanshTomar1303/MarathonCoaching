@@ -39,23 +39,27 @@ export function Navbar() {
           scrolled ? "py-3" : "py-6"
         )}
       >
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14">
           <div
             className={cn(
-              "grid grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-full px-5 lg:px-8 transition-all duration-300",
+              "grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-full px-5 lg:px-8 transition-all duration-300",
               scrolled ? "glass shadow-[0_10px_40px_-15px_rgba(11,31,77,0.3)] py-2.5" : "py-3"
             )}
           >
-            <Link href="/" className="flex items-center gap-3 justify-self-start shrink-0">
-              <Image
-                src="/logos/cropped-M-icon.png"
-                alt="Marathon Academy"
-                width={40}
-                height={40}
-                className="rounded-xl"
-              />
-              <span className="font-display font-semibold text-lg tracking-tight text-foreground whitespace-nowrap hidden sm:block">
-                Marathon Academy
+            <Link
+              href="/"
+              aria-label="SKC Career — Home"
+              className="flex items-center justify-self-start shrink-0"
+            >
+              <span className="flex items-center justify-center rounded-xl bg-white p-1.5 shadow-sm ring-1 ring-black/5">
+                <Image
+                  src="/logos/skc-logo.png"
+                  alt="SKC Career"
+                  width={140}
+                  height={124}
+                  priority
+                  className="h-9 w-auto object-contain"
+                />
               </span>
             </Link>
 

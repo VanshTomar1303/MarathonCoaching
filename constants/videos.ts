@@ -7,7 +7,7 @@ import type { VideoItem } from "@/types";
  * embedding unrelated content. Fill in real YouTube video IDs before launch.
  */
 export const videos: VideoItem[] = [
-  { title: "Campus Tour — Marathon Academy, Salt Lake", youtubeId: "", category: "Campus Tour" },
+  { title: "Campus Tour — SKC Career, Cuttack", youtubeId: "", category: "Campus Tour" },
   { title: "Inside a Live Physics Class", youtubeId: "", category: "Teaching Demo" },
   { title: "Meet the Faculty: Shatrudha Prasad", youtubeId: "", category: "Faculty Interview" },
   { title: "Student Interview: From WBJEE to BITS Pilani", youtubeId: "", category: "Student Interview" },

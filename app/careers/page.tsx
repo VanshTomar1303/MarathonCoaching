@@ -21,7 +21,7 @@ export default function CareersPage() {
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Careers</p>
             <h1 className="font-display font-semibold text-4xl sm:text-5xl tracking-tight text-balance">
-              Join the Marathon Academy team
+              Join the SKC Career team
             </h1>
           </RevealOnScroll>
         </div>

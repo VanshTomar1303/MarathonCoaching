@@ -5,13 +5,14 @@ import { SmoothScrollProvider } from "@/components/animations/SmoothScrollProvid
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 import { ThemeProvider } from "@/components/animations/ThemeProvider";
 import { site } from "@/constants/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marathonacademy.co.in"),
   title: {
-    default: `${site.name} — IIT-JEE Coaching Institute in Orissa`,
+    default: `${site.name} — IIT-JEE & NEET Coaching Institute in Orissa`,
     template: `%s | ${site.name}`,
   },
   description: site.mission,
@@ -50,6 +51,7 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
+            <CookieConsent />
           </SmoothScrollProvider>
         </ThemeProvider>
       </body>

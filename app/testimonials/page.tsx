@@ -4,6 +4,7 @@ import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { BlueprintGrid } from "@/components/animations/BlueprintGrid";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { ComingSoon } from "@/components/ui/ComingSoon";
 import { testimonials, parentTestimonials } from "@/constants/testimonials";
 import { site } from "@/constants/site";
 
@@ -47,6 +48,12 @@ export default function TestimonialsPage() {
       </section>
 
       <section className="relative pb-28">
+        {testimonials.length === 0 && parentTestimonials.length === 0 ? (
+          <ComingSoon
+            title="Success stories coming soon"
+            subtitle="We're collecting stories from our students and parents — check back soon."
+          />
+        ) : (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <RevealOnScroll className="flex justify-center mb-14">
             <Tabs defaultValue="students" className="w-full flex flex-col items-center">
@@ -63,6 +70,7 @@ export default function TestimonialsPage() {
             </Tabs>
           </RevealOnScroll>
         </div>
+        )}
       </section>
     </>
   );

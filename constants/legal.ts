@@ -45,7 +45,7 @@ export const cookiePolicySections = [
 export const termsSections = [
   {
     heading: "Acceptance of Terms",
-    body: "By accessing or using the Marathon Academy website, or enrolling in any course, you agree to be bound by these Terms & Conditions.",
+    body: "By accessing or using the SKC Career website, or enrolling in any course, you agree to be bound by these Terms & Conditions.",
   },
   {
     heading: "Enrolment and Fees",
@@ -53,15 +53,15 @@ export const termsSections = [
   },
   {
     heading: "Code of Conduct",
-    body: "Students are expected to maintain respectful and disciplined conduct during classes, tests, and all Academy-organised activities, whether online or offline. Marathon Academy reserves the right to take appropriate action, including suspension, in cases of serious misconduct.",
+    body: "Students are expected to maintain respectful and disciplined conduct during classes, tests, and all Academy-organised activities, whether online or offline. SKC Career reserves the right to take appropriate action, including suspension, in cases of serious misconduct.",
   },
   {
     heading: "Intellectual Property",
-    body: "All study material, video lectures, test papers, and other content provided by Marathon Academy are the intellectual property of Marathon Academy and are licensed to enrolled students for personal study use only. Reproduction or redistribution without written permission is prohibited.",
+    body: "All study material, video lectures, test papers, and other content provided by SKC Career are the intellectual property of SKC Career and are licensed to enrolled students for personal study use only. Reproduction or redistribution without written permission is prohibited.",
   },
   {
     heading: "Limitation of Liability",
-    body: "While Marathon Academy is committed to providing high-quality education and guidance, we do not guarantee specific examination results or admission outcomes, which depend on multiple factors beyond our control.",
+    body: "While SKC Career is committed to providing high-quality education and guidance, we do not guarantee specific examination results or admission outcomes, which depend on multiple factors beyond our control.",
   },
 ];
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
+import { ComingSoon } from "@/components/ui/ComingSoon";
 import { galleryImages } from "@/constants/gallery";
 import { cn } from "@/lib/utils";
 
@@ -15,6 +16,17 @@ const filters = [
 
 export function GalleryClient() {
   const [active, setActive] = useState<string>("all");
+
+  if (galleryImages.length === 0) {
+    return (
+      <section className="relative pb-28">
+        <ComingSoon
+          title="Photos & gallery coming soon"
+          subtitle="We're putting together photos from our campus and events — check back soon."
+        />
+      </section>
+    );
+  }
 
   const filtered =
     active === "all" ? galleryImages : galleryImages.filter((g) => g.category === active);

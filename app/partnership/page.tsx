@@ -26,7 +26,7 @@ export default function PartnershipPage() {
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Partnership Programme</p>
             <h1 className="font-display font-semibold text-4xl sm:text-5xl tracking-tight text-balance">
-              Partner with Marathon Academy
+              Partner with SKC Career
             </h1>
           </RevealOnScroll>
         </div>

@@ -20,7 +20,7 @@ export default function VideosPage() {
           <RevealOnScroll>
             <p className="text-sm font-medium text-gold uppercase tracking-wider mb-4">Video Gallery</p>
             <h1 className="font-display font-semibold text-4xl sm:text-5xl tracking-tight text-balance">
-              See Marathon Academy in motion
+              See SKC Career in motion
             </h1>
           </RevealOnScroll>
         </div>

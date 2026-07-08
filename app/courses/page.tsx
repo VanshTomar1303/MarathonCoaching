@@ -9,7 +9,7 @@ import { courses } from "@/constants/courses";
 export const metadata: Metadata = {
   title: "Courses",
   description:
-    "IIT JEE Foundation Course (Class 9 & 10), the One Year Course and the Two Year Course for JEE Main and JEE Advanced — online IIT-JEE coaching from Marathon Academy, Orissa.",
+    "IIT JEE Foundation Course (Class 9 & 10), the One Year Course and the Two Year Course for JEE Main and JEE Advanced — online IIT-JEE coaching from SKC Career, Orissa.",
 };
 
 export default function CoursesPage() {

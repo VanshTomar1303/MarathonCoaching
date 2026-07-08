@@ -42,7 +42,7 @@ export default function ContactPage() {
                 <Phone className="h-5 w-5 text-gold shrink-0" /> {site.phone}
               </a>
               <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm hover:text-foreground">
-                <MessageCircle className="h-5 w-5 text-gold shrink-0" /> WhatsApp Us
+                <MessageCircle className="h-5 w-5 text-gold shrink-0" /> WhatsApp {site.whatsapp}
               </a>
               <a href={`mailto:${site.email}`} className="flex items-center gap-3 text-sm hover:text-foreground">
                 <Mail className="h-5 w-5 text-gold shrink-0" /> {site.email}

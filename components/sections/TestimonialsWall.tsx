@@ -6,6 +6,9 @@ import { Card } from "@/components/ui/card";
 import { testimonials } from "@/constants/testimonials";
 
 export function TestimonialsWall() {
+  // Success stories are being worked on — hide this section until content is ready.
+  if (testimonials.length === 0) return null;
+
   return (
     <section className="relative py-28 bg-surface-muted">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

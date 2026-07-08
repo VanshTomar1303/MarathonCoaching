@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { FacebookIcon, TwitterIcon, YoutubeIcon } from "@/components/ui/social-icons";
 import { site, footerLinks } from "@/constants/site";
 import { branches } from "@/constants/locations";
@@ -12,15 +12,16 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-10 relative">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-10">
           <div className="col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <Image
-                src="/logos/cropped-M-icon.png"
-                alt="Marathon Academy"
-                width={36}
-                height={36}
-                className="rounded-lg"
-              />
-              <span className="font-display font-semibold text-lg">{site.name}</span>
+            <Link href="/" className="inline-flex items-center mb-4">
+              <span className="flex items-center justify-center rounded-lg bg-white p-1.5">
+                <Image
+                  src="/logos/skc-logo.png"
+                  alt="SKC Career"
+                  width={140}
+                  height={124}
+                  className="h-12 w-auto object-contain"
+                />
+              </span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-5">{site.mission}</p>
             <div className="flex gap-3">
@@ -49,6 +50,9 @@ export function Footer() {
           <a href={`mailto:${site.email}`} className="flex items-center gap-3 text-sm text-white/70 hover:text-gold">
             <Mail className="h-4 w-4 shrink-0" /> {site.email}
           </a>
+          <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-white/70 hover:text-gold">
+            <MessageCircle className="h-4 w-4 shrink-0" /> WhatsApp {site.whatsapp}
+          </a>
           {branches.map((b) => (
             <div key={b.name} className="flex items-start gap-3 text-sm text-white/70">
               <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
@@ -63,9 +67,11 @@ export function Footer() {
         <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <a href={site.androidApp} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
-              Get the Android App
-            </a>
+            {site.androidApp && (
+              <a href={site.androidApp} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                Get the Android App
+              </a>
+            )}
             <span>{site.tagline}</span>
           </div>
         </div>

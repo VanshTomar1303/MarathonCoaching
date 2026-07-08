@@ -24,7 +24,7 @@ export default function AlumniPage() {
             </h1>
             <p className="mt-6 text-lg text-foreground/65 leading-relaxed max-w-2xl mx-auto">
               From IITs and NITs to BITS Pilani, ISI, CMI and leading medical colleges — a look
-              at where the Marathon Academy journey has led.
+              at where the SKC Career journey has led.
             </p>
           </RevealOnScroll>
         </div>

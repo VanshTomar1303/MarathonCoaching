@@ -17,7 +17,7 @@ export function CTASection() {
               Start your IIT-JEE journey today
             </h2>
             <p className="mt-5 text-white/60 max-w-lg mx-auto">
-              Join Marathon Academy and prepare with the structure, mentorship, and results that
+              Join SKC Career and prepare with the structure, mentorship, and results that
               have defined our IIT-JEE coaching.
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">

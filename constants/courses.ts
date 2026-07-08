@@ -1,7 +1,7 @@
 import type { Course } from "@/types";
 
 /**
- * The three courses Marathon Academy actually offers, per marathonacademy.co.in.
+ * The three courses SKC Career actually offers, per marathonacademy.co.in.
  * Copy is drawn from the live course pages (Foundation, One-Year, Two-Year).
  */
 export const courses: Course[] = [
@@ -16,7 +16,7 @@ export const courses: Course[] = [
     duration: "12 months access",
     batchSize: "20-25 students",
     description:
-      "An online course from Marathon Academy that prepares Class 9 and Class 10 students for the Joint Entrance Examination (JEE). It covers all the important topics of the IIT-JEE syllabus and provides ample practice through mock tests and question banks, with video lectures from experienced faculty to help students understand complex concepts — building a strong foundation well before Class 11 begins.",
+      "An online course from SKC Career that prepares Class 9 and Class 10 students for the Joint Entrance Examination (JEE). It covers all the important topics of the IIT-JEE syllabus and provides ample practice through mock tests and question banks, with video lectures from experienced faculty to help students understand complex concepts — building a strong foundation well before Class 11 begins.",
     highlights: [
       "12 months of access to online video lectures",
       "5,000+ practice questions",
@@ -28,13 +28,13 @@ export const courses: Course[] = [
       { title: "Chemistry Fundamentals", topics: ["Matter & its Nature", "Atomic Structure", "Chemical Reactions", "Periodic Classification"] },
       { title: "Mathematics Fundamentals", topics: ["Number Systems", "Algebra", "Coordinate Geometry", "Mensuration"] },
     ],
-    studyMaterial: ["Online video lectures", "Chapter-wise question banks", "Hard copy study material", "Access on the Marathon Academy mobile app"],
+    studyMaterial: ["Online video lectures", "Chapter-wise question banks", "Hard copy study material", "Access on the SKC Career mobile app"],
     mockTests: "10 full-length mock tests with practice question banks to test your knowledge.",
-    parentDashboard: "Parents can closely monitor their child's progress and performance through Marathon Academy's online portal.",
+    parentDashboard: "Parents can closely monitor their child's progress and performance through SKC Career's online portal.",
     faqs: [
-      { question: "What is the IIT JEE Foundation Course?", answer: "An online course by Marathon Academy that prepares students for the Joint Entrance Examination (JEE). It covers all the important topics of the IIT-JEE syllabus and offers practice through mock tests, question banks and video lectures from experienced faculty." },
+      { question: "What is the IIT JEE Foundation Course?", answer: "An online course by SKC Career that prepares students for the Joint Entrance Examination (JEE). It covers all the important topics of the IIT-JEE syllabus and offers practice through mock tests, question banks and video lectures from experienced faculty." },
       { question: "Who should take the IIT JEE Foundation Course?", answer: "Students in Class 9 and Class 10 who want to build a solid foundation early for the IIT-JEE entrance exam and a future career in engineering." },
-      { question: "How is it different from other courses?", answer: "It is created by Marathon Academy — which has a proven track record of preparing students for the IIT-JEE — is available online so you can study at your own pace from anywhere, and includes mock tests and practice questions to test your knowledge." },
+      { question: "How is it different from other courses?", answer: "It is created by SKC Career — which has a proven track record of preparing students for the IIT-JEE — is available online so you can study at your own pace from anywhere, and includes mock tests and practice questions to test your knowledge." },
     ],
     image: "/courses/JEE-Foundation-Course.jpg",
   },
@@ -49,7 +49,7 @@ export const courses: Course[] = [
     duration: "1 year",
     batchSize: "20-25 students",
     description:
-      "Marathon Academy's one-year course for JEE Main and JEE Advanced, open to students who have completed or will complete Class 12. The module covers every topic taught in Physics, Chemistry and Mathematics across the 11th and 12th grades, helping students do well in their 12th Board exams and engineering entrance exams alike.",
+      "SKC Career's one-year course for JEE Main and JEE Advanced, open to students who have completed or will complete Class 12. The module covers every topic taught in Physics, Chemistry and Mathematics across the 11th and 12th grades, helping students do well in their 12th Board exams and engineering entrance exams alike.",
     highlights: [
       "Detailed video lessons covering all topics on the syllabus",
       "Practice questions and mock tests to assess your progress",
@@ -64,7 +64,7 @@ export const courses: Course[] = [
     ],
     studyMaterial: ["Detailed video lessons", "Practice question sets", "Hard copy study material", "Online test series with performance tracking"],
     mockTests: "Online JEE Main and JEE Advanced pattern mock tests to help you assess your progress.",
-    parentDashboard: "Progress and performance can be tracked through Marathon Academy's online portal, with dedicated personal mentors supporting each student.",
+    parentDashboard: "Progress and performance can be tracked through SKC Career's online portal, with dedicated personal mentors supporting each student.",
     faqs: [
       { question: "Who is eligible for the one-year course?", answer: "Students who have completed or will complete Class 12 are eligible for the JEE one-year programme." },
       { question: "Which exams does this course prepare me for?", answer: "JEE Main and JEE Advanced, BITSAT, WBJEE, KVPY, ISI, CMI, all state-level engineering entrance exams, and the 12th Board exams." },
@@ -82,9 +82,9 @@ export const courses: Course[] = [
     duration: "2 years",
     batchSize: "20-25 students",
     description:
-      "Marathon Academy's two-year course for JEE Main and JEE Advanced, designed for students entering Class XI. Over two years it covers XII Boards, JEE (Main & Advanced), other engineering entrance exams, and various national and international Olympiads together — preparing students in a pattern-proof method for the fully computer-based JEE.",
+      "SKC Career's two-year course for JEE Main and JEE Advanced, designed for students entering Class XI. Over two years it covers XII Boards, JEE (Main & Advanced), other engineering entrance exams, and various national and international Olympiads together — preparing students in a pattern-proof method for the fully computer-based JEE.",
     highlights: [
-      "Video recordings of every class, available anytime in the Marathon Academy mobile app",
+      "Video recordings of every class, available anytime in the SKC Career mobile app",
       "Online test series with test analysis, weak-area improvement and time management",
       "National benchmarking against students from across India and NRI students",
       "Pattern-proof preparation for the computer-based JEE Main & Advanced",
@@ -95,9 +95,9 @@ export const courses: Course[] = [
       { title: "Mathematics", topics: ["Algebra", "Calculus", "Coordinate Geometry", "Vectors & 3D Geometry"] },
       { title: "Covered Together", topics: ["XII Board Exams", "JEE Main & Advanced", "Other engineering entrance exams", "National & international Olympiads"] },
     ],
-    studyMaterial: ["Class video recordings on the Marathon Academy mobile app", "Hard copy study material", "Online question banks and test series"],
+    studyMaterial: ["Class video recordings on the SKC Career mobile app", "Hard copy study material", "Online question banks and test series"],
     mockTests: "National-level online test series conducted on a common platform with students from across India and abroad, for a true measure of competition and performance.",
-    parentDashboard: "Parents can closely monitor their child's progress and performance through Marathon Academy's online portal.",
+    parentDashboard: "Parents can closely monitor their child's progress and performance through SKC Career's online portal.",
     faqs: [
       { question: "Who is the two-year course for?", answer: "Students currently in Class X who will enter Class XI — the course prepares them across two years for the 12th Boards, JEE Main & Advanced, other entrance exams and Olympiads together." },
       { question: "Is JEE Advanced now an online exam?", answer: "Yes. Since 2018 the Joint Entrance Examination (Advanced) is conducted online as a computer-based test, and the course prepares you in a pattern-proof method so you're ready even if the format changes." },

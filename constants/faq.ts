@@ -3,9 +3,9 @@ import type { FAQItem } from "@/types";
 export const faqs: FAQItem[] = [
   {
     category: "Admissions",
-    question: "How do I enroll at Marathon Academy?",
+    question: "How do I enroll at SKC Career?",
     answer:
-      "Fill out the enquiry form on any course page or the Contact page, or call us directly at +91 89616 55910. Our counsellors will guide you through course selection, batch timing and fees.",
+      "Fill out the enquiry form on any course page or the Contact page, or call us directly at +91 9124674405. Our counsellors will guide you through course selection, batch timing and fees.",
   },
   {
     category: "Admissions",
@@ -27,7 +27,7 @@ export const faqs: FAQItem[] = [
   },
   {
     category: "Test Series",
-    question: "What is MAST (Marathon Academy Smart Test)?",
+    question: "What is MAST (SKC Career Smart Test)?",
     answer:
       "MAST is our internal test series with live, all-batch ranking, drawn from a question bank of 10,000+ questions covering the full syllabus.",
   },

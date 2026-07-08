@@ -1,20 +1,21 @@
 export const site = {
-  name: "Marathon Academy",
+  name: "SKC Career",
   tagline: "Hear the Success Mantra",
-  descriptor: "IIT-JEE Coaching Institute in Orissa",
+  descriptor: "IIT-JEE & NEET Coaching Institute in Orissa",
   mission:
-    "We at Marathon Academy are committed to provide quality education in a high competitive, congenial and healthy environment along with the best infrastructure.",
-  phone: "+91 89616 55910",
+    "We at SKC Career are committed to provide quality education in a high competitive, congenial and healthy environment along with the best infrastructure.",
+  phone: "+91 9124674405",
   phoneHref: "tel:+918961655910",
-  whatsappHref: "https://wa.me/918961655910",
+  whatsapp: "+91 91246 74410",
+  whatsappHref: "https://wa.me/919124674405",
   email: "info@marathonacademy.co.in",
-  address: "Plot No-1178/7D, Sec-9, CDA, Cuttack, Odisha - 753014",
+  address: "Flat No-108, Block-A, Sai Lifestyle, 1st Floor, Pipili, Siula, Puri - 752104, Odisha",
   social: {
     facebook: "https://www.facebook.com/p/Marathon-Academy-IIT-JEE-Course-100083274168045/",
     twitter: "https://twitter.com/",
     youtube: "https://www.youtube.com/channel/UC7S2rsZTgaMf8tD_YYBlMkg/videos",
   },
-  androidApp: "https://play.google.com/store/apps/details?id=co.martin.glasa",
+  androidApp: "",
 };
 
 export const navLinks = [

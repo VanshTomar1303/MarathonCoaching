@@ -28,7 +28,7 @@ export function WhyMarathon() {
     <section className="relative py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <RevealOnScroll className="max-w-2xl mb-16">
-          <p className="text-sm font-medium text-gold uppercase tracking-wider mb-3">Why Marathon Academy</p>
+          <p className="text-sm font-medium text-gold uppercase tracking-wider mb-3">Why SKC Career</p>
           <h2 className="font-display font-semibold text-3xl sm:text-4xl tracking-tight text-balance">
             Everything you need to prepare with confidence
           </h2>

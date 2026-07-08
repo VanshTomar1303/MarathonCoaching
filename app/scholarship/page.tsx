@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const eligibility = [
   "Open to students of Class IX through XII, and droppers",
-  "No prior enrolment at Marathon Academy required",
+  "No prior enrolment at SKC Career required",
   "Valid school ID or previous mark sheet required at the test centre",
 ];
 

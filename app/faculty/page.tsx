@@ -4,6 +4,7 @@ import { Award } from "lucide-react";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { BlueprintGrid } from "@/components/animations/BlueprintGrid";
 import { Card } from "@/components/ui/card";
+import { ComingSoon } from "@/components/ui/ComingSoon";
 import { faculty } from "@/constants/faculty";
 import { site } from "@/constants/site";
 
@@ -28,6 +29,12 @@ export default function FacultyPage() {
       </section>
 
       <section className="relative pb-28">
+        {faculty.length === 0 ? (
+          <ComingSoon
+            title="Faculty details coming soon"
+            subtitle="We'll introduce our faculty here after finalising with the panel team."
+          />
+        ) : (
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-8">
           {faculty.map((f, i) => (
             <RevealOnScroll key={f.slug} delay={i * 0.08}>
@@ -54,6 +61,7 @@ export default function FacultyPage() {
             </RevealOnScroll>
           ))}
         </div>
+        )}
       </section>
     </>
   );
