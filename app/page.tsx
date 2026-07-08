@@ -1,5 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
-import { WhyMarathon } from "@/components/sections/WhyMarathon";
+import { WhySKCCareer } from "@/components/sections/WhySKCCareer";
 import { CoursesBento } from "@/components/sections/CoursesBento";
 import { AdmissionProcess } from "@/components/sections/AdmissionProcess";
 import { StudentJourneyTimeline } from "@/components/sections/StudentJourneyTimeline";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <WhyMarathon />
+      <WhySKCCareer />
       <CoursesBento />
       <AdmissionProcess />
       <StudentJourneyTimeline />

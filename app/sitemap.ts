@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { courses } from "@/constants/courses";
 import { blogPosts } from "@/constants/blog";
 
-const BASE_URL = "https://marathonacademy.co.in";
+const BASE_URL = "https://skccareer.com";
 
 const staticRoutes = [
   "",

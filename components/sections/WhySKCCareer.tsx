@@ -23,7 +23,7 @@ const features = [
   { icon: Compass, title: "Career Counselling & Guidance", desc: "One-on-one counselling to choose the right course, exam and career path — plus admission guidance at every step." },
 ];
 
-export function WhyMarathon() {
+export function WhySKCCareer() {
   return (
     <section className="relative py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

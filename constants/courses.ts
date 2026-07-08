@@ -1,7 +1,7 @@
 import type { Course } from "@/types";
 
 /**
- * The three courses SKC Career actually offers, per marathonacademy.co.in.
+ * The three courses SKC Career actually offers, per SKCCareer .co.in.
  * Copy is drawn from the live course pages (Foundation, One-Year, Two-Year).
  */
 export const courses: Course[] = [

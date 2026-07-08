@@ -1,7 +1,7 @@
 import type { VideoItem } from "@/types";
 
 /**
- * No real video files exist yet — the scrape of marathonacademy.co.in only
+ * No real video files exist yet — the scrape of SKCCareer .co.in only
  * referenced a YouTube channel, not specific videos. youtubeId is left empty
  * so the UI renders a clear "video coming soon" placeholder card instead of
  * embedding unrelated content. Fill in real YouTube video IDs before launch.

@@ -6,14 +6,14 @@ export const site = {
     "We at SKC Career are committed to provide quality education in a high competitive, congenial and healthy environment along with the best infrastructure.",
   phone: "+91 9124674405",
   phoneHref: "tel:+919124674405",
-  whatsapp: "+91 91246 74410",
+  whatsapp: "+91 9124674405",
   whatsappHref: "https://wa.me/919124674405",
-  email: "info@marathonacademy.co.in",
+  email: "info@skccareer.com",
   address: "Flat No-108, Block-A, Sai Lifestyle, 1st Floor, Pipili, Siula, Puri - 752104, Odisha",
   social: {
-    facebook: "https://www.facebook.com/p/Marathon-Academy-IIT-JEE-Course-100083274168045/",
+    facebook: "https://www.facebook.com",
     twitter: "https://twitter.com/",
-    youtube: "https://www.youtube.com/channel/UC7S2rsZTgaMf8tD_YYBlMkg/videos",
+    youtube: "https://www.youtube.com",
   },
   androidApp: "",
 };

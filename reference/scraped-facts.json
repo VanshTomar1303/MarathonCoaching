@@ -1,8 +1,8 @@
 {
   "contact": {
     "phone": "+91 8961655910",
-    "email": "info@marathonacademy.co.in",
-    "address": "AD-89, First Floor, (Marathon Academy) Sector - 1, Salt Lake, Kolkata - 700064",
+    "email": "info@skccareer.com",
+    "address": "AD-89, First Floor, (SKCCareer  ) Sector - 1, Salt Lake, Kolkata - 700064",
     "social": ["Facebook", "Twitter", "YouTube"]
   },
   "founder": {
@@ -35,7 +35,7 @@
     "Doubt Removal",
     "Personal Attention and Focus",
     "Small batch sizes of 20-25 students",
-    "Marathon Academy Smart Test (MAST) with live ranking",
+    "SKCCareer   Smart Test (MAST) with live ranking",
     "Question bank of 10,000+ questions covering full syllabus"
   ],
   "results_by_year": {
@@ -99,7 +99,7 @@
   ],
   "note_on_testimonials": "Original site has ~15 long-form first-person testimonials naming Shatrudha Prasad as maths faculty. Full paragraphs not reproduced here (copyright) — only name/institute extracted above. New site should commission fresh short-form quotes/pull-quotes rather than copy old paragraphs verbatim.",
   "image_inventory": {
-    "logos": ["cropped-marathon-logo1.jpg", "cropped-M-icon.png", "marathon-academy.png"],
+    "logos": ["cropped-SKCCareer-logo1.jpg", "cropped-M-icon.png", "skccareer.png"],
     "rank_holder_photos": "31 individual student photos named like `<name>-air-<rank>.jpg`, one per results entry above",
     "campus_and_classroom_gallery": "IIT-JEE-course-India-1..30.jpg (30 images)",
     "success_party_gallery": "IIT-JEE-Exam-success-party-1..30.jpg (30 images)",
@@ -107,6 +107,6 @@
     "app_ui_mockups": ["iit-jee-course-mobile-app.png", "iit-jee-online-text.png", "iit-jee-study-material.png"],
     "faculty": ["Shatrudha-Prasad.png"],
     "blog_graphics": ["Top-10-Engineering-Entrance-Exams-in-India-2022-2.png", "Ryan-Biswas.png", "Samahriti-Mukherjee-ISI.png", "Sukrit-Chattopadhyay.png"],
-    "misc_illustrations": ["rsw_370cg_truem*.webp/jpg (36 files, decorative/illustration set)", "marathonacademy-girl001.png", "marathonacademy-girl02.png"]
+    "misc_illustrations": ["rsw_370cg_truem*.webp/jpg (36 files, decorative/illustration set)", "SKCCareer -girl001.png", "SKCCareer -girl02.png"]
   }
 }

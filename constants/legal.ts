@@ -19,7 +19,7 @@ export const privacyPolicySections = [
   },
   {
     heading: "Your Rights",
-    body: "You may request access to, correction of, or deletion of your personal information held by us at any time by contacting us at info@marathonacademy.co.in.",
+    body: "You may request access to, correction of, or deletion of your personal information held by us at any time by contacting us at info@skccareer.com.",
   },
   {
     heading: "Changes to This Policy",
@@ -53,7 +53,7 @@ export const termsSections = [
   },
   {
     heading: "Code of Conduct",
-    body: "Students are expected to maintain respectful and disciplined conduct during classes, tests, and all Academy-organised activities, whether online or offline. SKC Career reserves the right to take appropriate action, including suspension, in cases of serious misconduct.",
+    body: "Students are expected to maintain respectful and disciplined conduct during classes, tests, and all  -organised activities, whether online or offline. SKC Career reserves the right to take appropriate action, including suspension, in cases of serious misconduct.",
   },
   {
     heading: "Intellectual Property",
@@ -80,6 +80,6 @@ export const refundPolicySections = [
   },
   {
     heading: "How to Request a Refund",
-    body: "Refund requests must be submitted in writing to info@marathonacademy.co.in along with the enrolment details. Approved refunds are processed within 15 working days.",
+    body: "Refund requests must be submitted in writing to info@skccareer.com along with the enrolment details. Approved refunds are processed within 15 working days.",
   },
 ];

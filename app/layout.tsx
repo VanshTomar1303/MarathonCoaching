@@ -10,7 +10,7 @@ import { ThemeProvider } from "@/components/animations/ThemeProvider";
 import { site } from "@/constants/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://marathonacademy.co.in"),
+  metadataBase: new URL("https://skccareer.com"),
   title: {
     default: `${site.name} — IIT-JEE & NEET Coaching Institute in Orissa`,
     template: `%s | ${site.name}`,
