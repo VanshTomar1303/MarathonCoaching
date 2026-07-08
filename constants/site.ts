@@ -5,7 +5,7 @@ export const site = {
   mission:
     "We at SKC Career are committed to provide quality education in a high competitive, congenial and healthy environment along with the best infrastructure.",
   phone: "+91 9124674405",
-  phoneHref: "tel:+918961655910",
+  phoneHref: "tel:+919124674405",
   whatsapp: "+91 91246 74410",
   whatsappHref: "https://wa.me/919124674405",
   email: "info@marathonacademy.co.in",
