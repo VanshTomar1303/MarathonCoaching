@@ -10,7 +10,7 @@ import { branches } from "@/constants/locations";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: `Get in touch with ${site.name} — call, WhatsApp, or visit our Salt Lake, Orissa centre.`,
+  description: `Get in touch with ${site.name} — call, WhatsApp, or visit our Cuttack (Odisha) or New Delhi centre.`,
 };
 
 export default function ContactPage() {
@@ -47,9 +47,15 @@ export default function ContactPage() {
               <a href={`mailto:${site.email}`} className="flex items-center gap-3 text-sm hover:text-foreground">
                 <Mail className="h-5 w-5 text-gold shrink-0" /> {site.email}
               </a>
-              <div className="flex items-start gap-3 text-sm">
-                <MapPin className="h-5 w-5 text-gold shrink-0 mt-0.5" /> {mainBranch.address}
-              </div>
+              {branches.map((b) => (
+                <div key={b.name} className="flex items-start gap-3 text-sm">
+                  <MapPin className="h-5 w-5 text-gold shrink-0 mt-0.5" />
+                  <span>
+                    <span className="block font-medium">{b.name}</span>
+                    {b.address}
+                  </span>
+                </div>
+              ))}
             </Card>
             <MapEmbed query={mainBranch.mapQuery} />
           </RevealOnScroll>

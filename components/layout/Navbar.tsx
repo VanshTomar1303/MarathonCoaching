@@ -36,30 +36,30 @@ export function Navbar() {
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled ? "py-3" : "py-5"
+          scrolled ? "py-3" : "py-6"
         )}
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <div
             className={cn(
-              "flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-300",
-              scrolled ? "glass shadow-[0_8px_30px_-12px_rgba(11,31,77,0.25)]" : ""
+              "grid grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-full px-5 lg:px-8 transition-all duration-300",
+              scrolled ? "glass shadow-[0_10px_40px_-15px_rgba(11,31,77,0.3)] py-2.5" : "py-3"
             )}
           >
-            <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            <Link href="/" className="flex items-center gap-3 justify-self-start shrink-0">
               <Image
                 src="/logos/cropped-M-icon.png"
                 alt="Marathon Academy"
-                width={36}
-                height={36}
-                className="rounded-lg"
+                width={40}
+                height={40}
+                className="rounded-xl"
               />
-              <span className="font-display font-semibold text-lg tracking-tight text-foreground hidden sm:block">
+              <span className="font-display font-semibold text-lg tracking-tight text-foreground whitespace-nowrap hidden sm:block">
                 Marathon Academy
               </span>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-1 justify-self-center">
               {navLinks.map((link) => (
                 <div
                   key={link.href}
@@ -104,29 +104,31 @@ export function Navbar() {
               ))}
             </nav>
 
-            <div className="hidden lg:flex items-center gap-3 shrink-0">
-              <a
-                href={site.phoneHref}
-                className="hidden xl:flex items-center gap-1.5 whitespace-nowrap shrink-0 text-sm font-medium text-foreground/70 hover:text-foreground"
-              >
-                <Phone className="h-3.5 w-3.5 shrink-0" />
-                {site.phone}
-              </a>
-              <ThemeToggle />
-              <Button variant="gold" size="sm" asChild>
-                <Link href="/booking">Enroll Now</Link>
-              </Button>
-            </div>
+            <div className="flex items-center justify-self-end">
+              <div className="hidden lg:flex items-center gap-4">
+                <a
+                  href={site.phoneHref}
+                  className="hidden xl:flex items-center gap-1.5 whitespace-nowrap shrink-0 text-sm font-medium text-foreground/70 hover:text-foreground"
+                >
+                  <Phone className="h-3.5 w-3.5 shrink-0" />
+                  {site.phone}
+                </a>
+                <ThemeToggle />
+                <Button variant="gold" size="sm" asChild>
+                  <Link href="/booking">Enroll Now</Link>
+                </Button>
+              </div>
 
-            <div className="flex items-center gap-1 lg:hidden">
-              <ThemeToggle />
-              <button
-                className="p-2 text-foreground"
-                onClick={() => setMobileOpen((v) => !v)}
-                aria-label="Toggle menu"
-              >
-                {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
+              <div className="flex items-center gap-1 lg:hidden">
+                <ThemeToggle />
+                <button
+                  className="p-2 text-foreground"
+                  onClick={() => setMobileOpen((v) => !v)}
+                  aria-label="Toggle menu"
+                >
+                  {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                </button>
+              </div>
             </div>
           </div>
         </div>

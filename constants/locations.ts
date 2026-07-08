@@ -1,15 +1,17 @@
 import type { Branch } from "@/types";
 
-/**
- * Only one branch address was confirmed from the source site. The locations
- * template below is built to support multiple branches — add more Branch
- * entries here once additional centres are confirmed.
- */
 export const branches: Branch[] = [
   {
-    name: "Salt Lake, Orissa (Head Office)",
-    address: "AD-89, First Floor, Sector 1, Salt Lake, Orissa - 700064",
-    mapQuery: "AD-89, Sector 1, Salt Lake, Orissa 700064",
+    name: "Cuttack, Odisha (Head Office)",
+    address: "Plot No-1178/7D, Sec-9, CDA, Cuttack, Odisha - 753014",
+    mapQuery: "Plot No 1178/7D, Sector 9, CDA, Cuttack, Odisha 753014",
+    phone: "+91 89616 55910",
+    timings: "Mon - Sat, 9:00 AM - 7:00 PM",
+  },
+  {
+    name: "Hari Nagar, New Delhi",
+    address: "BE-183 Block B, Front Side, Ground Floor, Hari Nagar, New Delhi - 110064",
+    mapQuery: "BE-183 Block B, Hari Nagar, New Delhi 110064",
     phone: "+91 89616 55910",
     timings: "Mon - Sat, 9:00 AM - 7:00 PM",
   },

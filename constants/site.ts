@@ -8,7 +8,7 @@ export const site = {
   phoneHref: "tel:+918961655910",
   whatsappHref: "https://wa.me/918961655910",
   email: "info@marathonacademy.co.in",
-  address: "AD-89, First Floor, (Marathon Academy) Sector 1, Salt Lake, Orissa - 700064",
+  address: "Plot No-1178/7D, Sec-9, CDA, Cuttack, Odisha - 753014",
   social: {
     facebook: "https://www.facebook.com/p/Marathon-Academy-IIT-JEE-Course-100083274168045/",
     twitter: "https://twitter.com/",
@@ -32,9 +32,15 @@ export const navLinks = [
     ],
   },
   { label: "Results", href: "/results" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Alumni", href: "/alumni" },
-  { label: "Faculty", href: "/faculty" },
+  {
+    label: "Our Community",
+    href: "/testimonials",
+    children: [
+      { label: "Testimonials", href: "/testimonials" },
+      { label: "Alumni", href: "/alumni" },
+      { label: "Faculty", href: "/faculty" },
+    ],
+  },
   {
     label: "Resources",
     href: "/resources",

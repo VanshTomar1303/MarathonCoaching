@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FacebookIcon, TwitterIcon, YoutubeIcon } from "@/components/ui/social-icons";
 import { site, footerLinks } from "@/constants/site";
+import { branches } from "@/constants/locations";
 
 export function Footer() {
   return (
@@ -41,16 +42,22 @@ export function Footer() {
           <FooterCol title="Legal" links={footerLinks.legal} />
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-3 gap-4 border-y border-white/10 py-6">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 border-y border-white/10 py-6">
           <a href={site.phoneHref} className="flex items-center gap-3 text-sm text-white/70 hover:text-gold">
             <Phone className="h-4 w-4 shrink-0" /> {site.phone}
           </a>
           <a href={`mailto:${site.email}`} className="flex items-center gap-3 text-sm text-white/70 hover:text-gold">
             <Mail className="h-4 w-4 shrink-0" /> {site.email}
           </a>
-          <div className="flex items-center gap-3 text-sm text-white/70">
-            <MapPin className="h-4 w-4 shrink-0" /> {site.address}
-          </div>
+          {branches.map((b) => (
+            <div key={b.name} className="flex items-start gap-3 text-sm text-white/70">
+              <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+              <span>
+                <span className="block text-white/90 font-medium">{b.name}</span>
+                {b.address}
+              </span>
+            </div>
+          ))}
         </div>
 
         <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
